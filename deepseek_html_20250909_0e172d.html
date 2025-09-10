@@ -1,43 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeleLink Generator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>🔗 TeleLink Generator</h1>
-            <p>إنشاء روابط وهمية - التخزين في السحابة</p>
-        </div>
-
-        <div class="card">
-            <h2>🆕 إنشاء رابط جديد</h2>
-            <div class="form-group">
-                <label for="channelName">اسم القناة (اختياري):</label>
-                <input type="text" id="channelName" placeholder="اسم القناة">
-            </div>
-            <div class="form-group">
-                <label for="fakeMembers">عدد الأعضاء المزيفين:</label>
-                <input type="number" id="fakeMembers" value="10000" min="1000">
-            </div>
-            <button onclick="createLink()" class="btn">إنشاء رابط جديد</button>
-            <div id="result"></div>
-        </div>
-
-        <div class="card">
-            <h2>📊 الإحصائيات</h2>
-            <div id="stats"></div>
-        </div>
-
-        <div class="card">
-            <h2>📈 الروابط</h2>
-            <div id="linksList"></div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
